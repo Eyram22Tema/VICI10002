@@ -1,0 +1,73 @@
+{
+  "groups": [
+    {
+      "name": "jibble",
+      "type": "com.example.jibbleattendance.config.JibbleProperties",
+      "sourceType": "com.example.jibbleattendance.config.JibbleProperties"
+    },
+    {
+      "name": "jibble.sync",
+      "type": "com.example.jibbleattendance.config.JibbleProperties$Sync",
+      "sourceType": "com.example.jibbleattendance.config.JibbleProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jibble.personal-access-token",
+      "type": "java.lang.String",
+      "description": "Jibble personal access token used when client credentials are not supplied."
+    },
+    {
+      "name": "jibble.client-id",
+      "type": "java.lang.String",
+      "description": "Jibble API client ID."
+    },
+    {
+      "name": "jibble.client-secret",
+      "type": "java.lang.String",
+      "description": "Jibble API client secret."
+    },
+    {
+      "name": "jibble.identity-url",
+      "type": "java.lang.String",
+      "defaultValue": "https://identity.prod.jibble.io/connect/token",
+      "description": "Jibble identity token endpoint."
+    },
+    {
+      "name": "jibble.time-tracking-base-url",
+      "type": "java.lang.String",
+      "defaultValue": "https://time-tracking.prod.jibble.io/v1",
+      "description": "Base URL for Jibble time-tracking API requests."
+    },
+    {
+      "name": "jibble.page-size",
+      "type": "java.lang.Integer",
+      "defaultValue": 200,
+      "description": "Maximum number of Jibble time entries requested per page."
+    },
+    {
+      "name": "jibble.zone-id",
+      "type": "java.lang.String",
+      "defaultValue": "Africa/Accra",
+      "description": "Application timezone used for attendance date calculations."
+    },
+    {
+      "name": "jibble.sync.fixed-delay-ms",
+      "type": "java.lang.Long",
+      "defaultValue": 300000,
+      "description": "Delay in milliseconds between automatic synchronization runs."
+    },
+    {
+      "name": "jibble.sync.initial-delay-ms",
+      "type": "java.lang.Long",
+      "defaultValue": 15000,
+      "description": "Delay in milliseconds before the first automatic synchronization run."
+    },
+    {
+      "name": "jibble.sync.lookback-days",
+      "type": "java.lang.Integer",
+      "defaultValue": 2,
+      "description": "Number of recent days re-read during automatic synchronization."
+    }
+  ]
+}

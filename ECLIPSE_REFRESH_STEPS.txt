@@ -1,0 +1,19 @@
+After importing this project into Eclipse:
+
+1. Window -> Preferences -> Java -> Installed JREs
+   Confirm JDK 21 is selected.
+
+2. Right-click project -> Maven -> Update Project...
+   Check "Force Update of Snapshots/Releases" and click OK.
+
+3. Project -> Clean... -> Clean the project.
+
+4. Verify:
+   java -version
+   javac -version
+
+5. If Maven is installed:
+   mvn clean compile
+   mvn spring-boot:run
+
+The pom.xml compiler target is Java 21.
